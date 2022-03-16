@@ -48,6 +48,12 @@ public class CartController {
 			log.warn("Item with id ", request.getItemId(), " not found");
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
+		if (user.getCart() == null) {
+			log.warn("Initialized cart for user '{}'", user);
+			Cart cart = new Cart();
+			cart.setUser(user);
+			user.setCart(cart);
+		}
 		Cart cart = user.getCart();
 		IntStream.range(0, request.getQuantity())
 			.forEach(i -> cart.addItem(item.get()));
