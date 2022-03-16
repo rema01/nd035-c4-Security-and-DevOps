@@ -1,0 +1,175 @@
+2022-03-16 22:19:49.558  INFO 64080 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on CMTCL0X74111845 with PID 64080 (C:\Repos\Udacity-Nanodegree\P04-eCommerceApplication\target\classes started by RENMANG in C:\Repos\Udacity-Nanodegree\P04-eCommerceApplication)
+2022-03-16 22:19:49.562  INFO 64080 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2022-03-16 22:19:50.274  INFO 64080 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-03-16 22:19:50.366  INFO 64080 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 4 repository interfaces.
+2022-03-16 22:19:51.004  INFO 64080 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f1777de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-16 22:19:52.018  INFO 64080 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-16 22:19:52.064  INFO 64080 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-16 22:19:52.064  INFO 64080 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-03-16 22:19:52.228  INFO 64080 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-16 22:19:52.228  INFO 64080 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2601 ms
+2022-03-16 22:19:52.462  INFO 64080 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-16 22:19:52.689  INFO 64080 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-16 22:19:52.766  INFO 64080 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+        name: default
+        ...]
+2022-03-16 22:19:52.864  INFO 64080 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-03-16 22:19:52.867  INFO 64080 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-03-16 22:19:53.048  INFO 64080 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-03-16 22:19:53.235  INFO 64080 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-03-16 22:19:54.418  INFO 64080 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 22:19:55.320  WARN 64080 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 22:19:55.419  INFO 64080 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fb1948c, org.springframework.security.web.context.SecurityContextPersistenceFilter@33a8f553, org.springframework.security.web.header.HeaderWriterFilter@5a9baba8, org.springframework.web.filter.CorsFilter@7c39193f, org.springframework.security.web.authentication.logout.LogoutFilter@3e0327dd, com.example.demo.security.JWTAuthenticationFilter@230d013b, com.example.demo.security.JWTAuthenticationVerificationFilter@6e225c34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7204d98f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b94c200, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d84b088, org.springframework.security.web.session.SessionManagementFilter@b5311cb, org.springframework.security.web.access.ExceptionTranslationFilter@6e12f38c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73a1a1b4]
+2022-03-16 22:19:55.595  INFO 64080 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-16 22:19:55.861  INFO 64080 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-16 22:19:55.864  INFO 64080 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 6.828 seconds (JVM running for 7.373)
+2022-03-16 22:20:15.964  INFO 64080 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 22:20:15.965  INFO 64080 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-16 22:20:15.978  INFO 64080 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-03-16 22:20:16.145  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : User name set with 'test'
+2022-03-16 22:20:16.216  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Cart of user saved with id 1.
+2022-03-16 22:20:16.216  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Added cart 1 to user 0.
+2022-03-16 22:20:16.309  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Encrypted password for user
+2022-03-16 22:20:16.315  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Saved user to userRepository
+2022-03-16 22:26:15.358  INFO 64080 --- [nio-8080-exec-6] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-03-16 22:27:44.981  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Requesting findByUserName with Username: test
+2022-03-16 22:27:44.983  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : User found - username: 'test', id: 1
+2022-03-16 22:28:30.851  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : AddToCart: 1 x item with id 1 for user 'test'
+2022-03-16 22:28:30.880  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : Cart saved successfully
+2022-03-16 22:28:45.956  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.OrderController     : Submitting order from user: test
+2022-03-16 22:28:45.971  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.OrderController     : Order saved successfully.
+2022-03-16 22:28:57.985  INFO 64080 --- [nio-8080-exec-6] c.e.demo.controllers.OrderController     : Requesting order history for user: test
+2022-03-16 22:28:57.988  INFO 64080 --- [nio-8080-exec-6] c.e.demo.controllers.OrderController     : Returning orders from user: test
+2022-03-16 22:29:04.715  INFO 64080 --- [nio-8080-exec-7] c.e.demo.controllers.ItemController      : GetItemById: 1
+2022-03-16 22:29:11.769  INFO 64080 --- [nio-8080-exec-8] c.e.demo.controllers.ItemController      : GetItemsByName: Round Widget
+2022-03-16 22:29:11.774  INFO 64080 --- [nio-8080-exec-8] c.e.demo.controllers.ItemController      : ItemCount: 1
+2022-03-16 22:29:17.498  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.ItemController      : Returning all items of repository.
+2022-03-16 22:29:41.480  INFO 64080 --- [io-8080-exec-10] c.e.demo.controllers.ItemController      : GetItemById: 1313
+2022-03-16 22:30:00.636  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.ItemController      : GetItemsByName: Roundabout
+2022-03-16 22:30:00.639  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.ItemController      : ItemCount: 0
+2022-03-16 22:30:17.868  INFO 64080 --- [nio-8080-exec-2] c.e.demo.controllers.OrderController     : Requesting order history for user: wrongtest
+2022-03-16 22:30:17.870  WARN 64080 --- [nio-8080-exec-2] c.e.demo.controllers.OrderController     : User 'wrongtest' was not found.
+2022-03-16 22:30:29.901  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.OrderController     : Submitting order from user: wrongtestname
+2022-03-16 22:30:29.903  WARN 64080 --- [nio-8080-exec-3] c.e.demo.controllers.OrderController     : User 'wrongtestname' was not found.
+2022-03-16 22:30:45.002  INFO 64080 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : AddToCart: 1 x item with id 1 for user 'testasdf'
+2022-03-16 22:30:45.004  WARN 64080 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : User with username 'testasdf' not found
+2022-03-16 22:30:51.923  INFO 64080 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : AddToCart: 1 x item with id 113 for user 'test'
+2022-03-16 22:30:51.927  WARN 64080 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : Item with id 113 not found
+2022-03-16 22:30:58.052  INFO 64080 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : AddToCart: 15 x item with id 1 for user 'test'
+2022-03-16 22:30:58.063  INFO 64080 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : Cart saved successfully
+2022-03-16 22:31:13.182  INFO 64080 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : Requesting findByUserName with Username: testnotavailable
+2022-03-16 22:31:13.184  WARN 64080 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : User not found
+2022-03-16 22:31:13.194 ERROR 64080 --- [nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+        at com.example.demo.controllers.UserController.findByUserName(UserController.java:45) ~[classes/:na]
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at com.example.demo.security.JWTAuthenticationVerificationFilter.doFilterInternal(JWTAuthenticationVerificationFilter.java:41) ~[classes/:na]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at com.example.demo.security.JWTAuthenticationVerificationFilter.doFilterInternal(JWTAuthenticationVerificationFilter.java:41) ~[classes/:na]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.5.RELEASE.jar:5.1.5.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+        at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.19.jar:9.0.19]
+        at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-03-16 22:31:59.164  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : User name set with 'testbob'
+2022-03-16 22:31:59.166  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Cart of user saved with id 2.
+2022-03-16 22:31:59.166  INFO 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Added cart 2 to user 0.
+2022-03-16 22:31:59.166  WARN 64080 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Bad Request - Password strength not valid or missmatch between password and confirmPassword
+2022-03-16 22:32:15.552  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : User name set with 'testbob'
+2022-03-16 22:32:15.554  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Cart of user saved with id 3.
+2022-03-16 22:32:15.555  INFO 64080 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Added cart 3 to user 0.
+2022-03-16 22:32:15.555  WARN 64080 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Bad Request - Password strength not valid or missmatch between password and confirmPassword
+2022-03-16 22:32:22.511  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : User name set with 'testbob'
+2022-03-16 22:32:22.512  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : Cart of user saved with id 4.
+2022-03-16 22:32:22.513  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : Added cart 4 to user 0.
+2022-03-16 22:32:22.591  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : Encrypted password for user
+2022-03-16 22:32:22.593  INFO 64080 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : Saved user to userRepository
