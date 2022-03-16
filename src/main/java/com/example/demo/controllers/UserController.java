@@ -30,19 +30,19 @@ public class UserController {
 
 	@GetMapping("/id/{id}")
 	public ResponseEntity<User> findById(@PathVariable Long id) {
-		log.info("Requesting findById with Id: ", id);
+		log.info("Requesting findById with Id: {}", id);
 		return ResponseEntity.of(userRepository.findById(id));
 	}
 	
 	@GetMapping("/{username}")
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
-		log.info("Requesting findByUserName with Username: ", username);
+		log.info("Requesting findByUserName with Username: {}", username);
 		User user = userRepository.findByUsername(username);
 		if (user == null) {
 			log.warn("User not found");
 			ResponseEntity.notFound().build();
 		}
-		log.info("User found - username: ", user.getUsername(), ", id: ", user.getId());
+		log.info("User found - username: '{}', id: {}", user.getUsername(), user.getId());
 		return ResponseEntity.ok(user);
 	}
 	
@@ -53,29 +53,29 @@ public class UserController {
 			|| createUserRequest.getConfirmPassword() == null
 		) {
 			log.warn("Bad Request, due to wrong createUserRequest-variables.");
-			log.debug("username == null: ", createUserRequest.getUsername() == null);
-			log.debug("password == null: ", createUserRequest.getPassword() == null);
-			log.debug("confirmPassword == null: ", createUserRequest.getConfirmPassword() == null);
+			log.debug("username == null: {}", createUserRequest.getUsername() == null);
+			log.debug("password == null: {}", createUserRequest.getPassword() == null);
+			log.debug("confirmPassword == null: {}", createUserRequest.getConfirmPassword() == null);
 			return ResponseEntity.badRequest().build();
 		}
 
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
-		log.info("User name set with ", createUserRequest.getUsername());
+		log.info("User name set with '{}'", createUserRequest.getUsername());
 
 		Cart cart = new Cart();
 		cartRepository.save(cart);
-		log.info("Cart of user saved with id ", cart.getId());
+		log.info("Cart of user saved with id {}.", cart.getId());
 
 		user.setCart(cart);
-		log.info("Added cart ", cart.getId(), " to user ", user.getId());
+		log.info("Added cart {} to user {}.", cart.getId(), user.getId());
 
 		if (createUserRequest.getPassword().length() < 7 ||
 			!createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())) 
 		{
 			log.warn("Bad Request - Password strength not valid or missmatch between password and confirmPassword");
-			log.debug("Password length: ", createUserRequest.getPassword().length());
-			log.debug("Password == ConfirmPassword?: ", createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword()));
+			log.debug("Password length: {}", createUserRequest.getPassword().length());
+			log.debug("Password == ConfirmPassword?: {}", createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword()));
 			return ResponseEntity.badRequest().build();
 		}
 		user.setPassword(bCryptPasswordEncoder.encode(createUserRequest.getPassword()));

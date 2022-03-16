@@ -37,19 +37,19 @@ public class CartController {
 	
 	@PostMapping("/addToCart")
 	public ResponseEntity<Cart> addTocart(@RequestBody ModifyCartRequest request) {
-		log.info("AddToCart: ", request.getQuantity(), " x item with id ", request.getItemId(), " for user '", request.getUsername(), "'");
+		log.info("AddToCart: {} x item with id {} for user '{}'", request.getQuantity(), request.getItemId(), request.getUsername());
 		User user = userRepository.findByUsername(request.getUsername());
 		if(user == null) {
-			log.warn("User with username '", request.getUsername(), "' not found");
+			log.warn("User with username '{}' not found", request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Optional<Item> item = itemRepository.findById(request.getItemId());
 		if(!item.isPresent()) {
-			log.warn("Item with id ", request.getItemId(), " not found");
+			log.warn("Item with id {} not found", request.getItemId());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		if (user.getCart() == null) {
-			log.warn("Initialized cart for user '{}'", user);
+			log.warn("Initialized cart for user '{}'", user.getUsername());
 			Cart cart = new Cart();
 			cart.setUser(user);
 			user.setCart(cart);
@@ -64,15 +64,15 @@ public class CartController {
 	
 	@PostMapping("/removeFromCart")
 	public ResponseEntity<Cart> removeFromcart(@RequestBody ModifyCartRequest request) {
-		log.info("Remove item ", request.getItemId(), " from cart.");
+		log.info("Remove item {} from cart.", request.getItemId());
 		User user = userRepository.findByUsername(request.getUsername());
 		if(user == null) {
-			log.warn("User with username '", request.getUsername(), "' not found");
+			log.warn("User with username '{}' not found", request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Optional<Item> item = itemRepository.findById(request.getItemId());
 		if(!item.isPresent()) {
-			log.warn("Item with id ", request.getItemId(), " not found");
+			log.warn("Item with id {} not found", request.getItemId());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Cart cart = user.getCart();
